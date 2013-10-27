@@ -24842,38 +24842,38 @@ namespace Terraria
 			Main.chTitle = true;
 			if (Lang.lang <= 1 || english)
 			{
-				Lang.misc[0] = "A goblin army has been defeated!";
-				Lang.misc[1] = "A goblin army is approaching from the west!";
-				Lang.misc[2] = "A goblin army is approaching from the east!";
-				Lang.misc[3] = "A goblin army has arrived!";
-				Lang.misc[4] = "The Frost Legion has been defeated!";
-				Lang.misc[5] = "The Frost Legion is approaching from the west!";
-				Lang.misc[6] = "The Frost Legion is approaching from the east!";
-				Lang.misc[7] = "The Frost Legion has arrived!";
-				Lang.misc[8] = "The Blood Moon is rising...";
-				Lang.misc[9] = "You feel an evil presence watching you...";
-				Lang.misc[10] = "A horrible chill goes down your spine...";
-				Lang.misc[11] = "Screams echo around you...";
-				Lang.misc[12] = "Your world has been blessed with Cobalt!";
-				Lang.misc[13] = "Your world has been blessed with Mythril!";
-				Lang.misc[14] = "Your world has been blessed with Adamantite!";
-				Lang.misc[15] = "The ancient spirits of light and dark have been released.";
-				Lang.misc[16] = "has awoken!";
-				Lang.misc[17] = "has been defeated!";
+				Lang.misc[0] = "Goblini armada byla porazena!";
+				Lang.misc[1] = "Od zapadu se blizi armada goblinu!";
+				Lang.misc[2] = "Od vychodu se blizi armada goblinu!";
+				Lang.misc[3] = "Goblini jsou tu!";
+				Lang.misc[4] = "Mraziva legie byla porazena!";
+				Lang.misc[5] = "Od zapadu se blizi Mraziva legie!";
+				Lang.misc[6] = "Od vychodu se blizi Mraziva legie!";
+				Lang.misc[7] = "Mraziva legie dorazila!";
+				Lang.misc[8] = "Vychazi krvavy mesic...";
+				Lang.misc[9] = "Citis pritomnost zla, ktere te sleduje...";
+				Lang.misc[10] = "Beha ti mraz po zadech...";
+				Lang.misc[11] = "Slysis kolem sebe podivne skreky...";
+				Lang.misc[12] = "Ve svete se zacala vyskytovat kobaltova ruda!";
+                Lang.misc[13] = "Ve svete se zacala vyskytovat  mythrilova ruda!";
+                Lang.misc[14] = "Ve svete se zacala vyskytovat adamantitova ruda!";
+				Lang.misc[15] = "Stari duchove svetla a tmy byli vypuštěny.";
+				Lang.misc[16] = "byl probuzen!";
+				Lang.misc[17] = "byl porazen!";
 				Lang.misc[18] = "has arrived!";
 				Lang.misc[19] = " was slain...";
 				Lang.misc[20] = "A solar eclipse is happening!";
-				Lang.misc[21] = "Your world has been blessed with Palladium!";
-				Lang.misc[22] = "Your world has been blessed with Orichalcum!";
-				Lang.misc[23] = "Your world has been blessed with Titanium!";
-				Lang.misc[24] = "The pirates have been defeated!";
-				Lang.misc[25] = "Pirates are approaching from the west!";
-				Lang.misc[26] = "Pirates are approaching from the east!";
-				Lang.misc[27] = "The pirates have arrived!";
-				Lang.misc[28] = "You feel vibrations from deep below...";
-				Lang.misc[29] = "This is going to be a terrible night...";
-				Lang.misc[30] = "The air is getting colder around you...";
-				Lang.misc[31] = "The Pumpkin Moon is rising...";
+                Lang.misc[21] = "Ve svete se zacala vyskytovat palladiovou rudou!";
+                Lang.misc[22] = "Ve svete se zacalo vyskytovat orichalcum!";
+                Lang.misc[23] = "Ve svete se zacalo vyskytovat titanium!";
+				Lang.misc[24] = "Pirati byli porazeni!";
+				Lang.misc[25] = "PIRATI!!! Blizi se od zapadu!";
+                Lang.misc[26] = "PIRATI!!! Blizi se od vychodu!";
+				Lang.misc[27] = "Pirati jsou tu!";
+				Lang.misc[28] = "Citis podivne vibrace z hlubin pod tvyma nohama...";
+				Lang.misc[29] = "Tohle bude desiva noc...";
+				Lang.misc[30] = "Vzduch kolem tebe se nahle prudce ochladil...";
+				Lang.misc[31] = "Dynovy mesic vychazi...";
 				Lang.misc[32] = "The jungle grows restless...";
 				Lang.misc[33] = "Screams are echoing from the dungeon...";
 				Lang.menu[0] = "Start a new instance of Terraria to join!";
@@ -27813,11 +27813,11 @@ namespace Terraria
 					{
 						if (Main.rand.Next(2) == 0)
 						{
-							result = " fell to their death.";
+							result = " veril, ze umi litat.";
 						}
 						else
 						{
-							result = " didn't bounce.";
+							result = " se rozplacnul o zem a nyni je znamy pod prezdivkou Mr.Livanec.";
 						}
 					}
 					else if (other == 1)
@@ -27825,19 +27825,19 @@ namespace Terraria
 						int num2 = Main.rand.Next(4);
 						if (num2 == 0)
 						{
-							result = " forgot to breathe.";
+							result = " zapomel dychat.";
 						}
 						else if (num2 == 1)
 						{
-							result = " is sleeping with the fish.";
+							result = " se stal potravou pro rybicky.";
 						}
 						else if (num2 == 2)
 						{
-							result = " drowned.";
+							result = " zjistil, ze nema zabry a utopil se.";
 						}
 						else if (num2 == 3)
 						{
-							result = " is shark food.";
+							result = " je nyni zakusek pro zraloky.";
 						}
 					}
 					else if (other == 2)
@@ -27845,19 +27845,19 @@ namespace Terraria
 						int num3 = Main.rand.Next(4);
 						if (num3 == 0)
 						{
-							result = " got melted.";
+							result = " byl roztaven.";
 						}
 						else if (num3 == 1)
 						{
-							result = " was incinerated.";
+							result = " byl spalen na prach.";
 						}
 						else if (num3 == 2)
 						{
-							result = " tried to swim in lava.";
+							result = " se pokusil chvili plavat v lave a nahle zmizel.";
 						}
 						else if (num3 == 3)
 						{
-							result = " likes to play in magma.";
+							result = " si rad hraje s lavou. Ale neumi to..";
 						}
 					}
 					else if (other == 3)
