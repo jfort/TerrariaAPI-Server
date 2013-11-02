@@ -27663,114 +27663,114 @@ namespace Terraria
 		}
 		public static string deathMsg(int plr = -1, int npc = -1, int proj = -1, int other = -1)
 		{
-			if (Lang.lang <= 1)
+            if (Lang.lang <= 1 || true)
 			{
 				string result = "";
 				int num = Main.rand.Next(26);
 				string text = "";
 				if (num == 0)
 				{
-					text = " was slain";
+					text = " byl zabit.";
 				}
 				else if (num == 1)
 				{
-					text = " was eviscerated";
+					text = " byl vykuchan.";
 				}
 				else if (num == 2)
 				{
-					text = " was murdered";
+					text = " byl brutalne zavrazden.";
 				}
 				else if (num == 3)
 				{
-					text = "'s face was torn off";
+					text = " zjistil, ze mu nekdo utrhl xicht.";
 				}
 				else if (num == 4)
 				{
-					text = "'s entrails were ripped out";
+					text = " se pokochal pohledem na sve vyvrzene vnitrnosti.";
 				}
 				else if (num == 5)
 				{
-					text = " was destroyed";
+					text = " byl nakrajen na kosticky.";
 				}
 				else if (num == 6)
 				{
-					text = "'s skull was crushed";
+					text = " byl rozsapan.";
 				}
 				else if (num == 7)
 				{
-					text = " got massacred";
+					text = " byl zmasakrovan.";
 				}
 				else if (num == 8)
 				{
-					text = " got impaled";
+					text = " byl nabodnut. ";
 				}
 				else if (num == 9)
 				{
-					text = " was torn in half";
+					text = " byl naporcovan, zabalen a nyni se prodava v Tescu.";
 				}
 				else if (num == 10)
 				{
-					text = " was decapitated";
+					text = " prisel o hlavu. Ale moc velka zmena to pro neho nebude.";
 				}
 				else if (num == 11)
 				{
-					text = " let their arms get torn off";
+					text = " prisel o ruce a nohy a nyni chodi po svete jako trupik.";
 				}
 				else if (num == 12)
 				{
-					text = " watched their innards become outards";
+					text = " chvili uprene sledoval jak mu vnitrnosti tecou na zem.";
 				}
 				else if (num == 13)
 				{
-					text = " was brutally dissected";
+					text = " byl rozpitvan zaziva.";
 				}
 				else if (num == 14)
 				{
-					text = "'s extremities were detached";
+					text = " byl naporcovan.";
 				}
 				else if (num == 15)
 				{
-					text = "'s body was mangled";
+					text = " byl zmrzacen.";
 				}
 				else if (num == 16)
 				{
-					text = "'s vital organs were ruptured";
+					text = " vykrvacel.";
 				}
 				else if (num == 17)
 				{
-					text = " was turned into a pile of flesh";
+					text = " byl rozsekan na hromadku masa. Da si nekdo tatarak?";
 				}
 				else if (num == 18)
 				{
-					text = " was removed from " + Main.worldName;
+					text = " byl uplne vygumovan ze sveta " + Main.worldName;
 				}
 				else if (num == 19)
 				{
-					text = " got snapped in half";
+					text = " nyni hnojivo pro kytky.";
 				}
 				else if (num == 20)
 				{
-					text = " was cut down the middle";
+					text = " byl rozseknut napul.";
 				}
 				else if (num == 21)
 				{
-					text = " was chopped up";
+					text = " byl nakrajen na male kousky a nyni se prodava jako psi zradlo.";
 				}
 				else if (num == 22)
 				{
-					text = "'s plead for death was answered";
+					text = " nyni zjistuje, jestli existuje posmrtny zivot.";
 				}
 				else if (num == 23)
 				{
-					text = "'s meat was ripped off the bone";
+					text = " byl sezran.";
 				}
 				else if (num == 24)
 				{
-					text = "'s flailing about was finally stopped";
+					text = " dostal strasnou nakladacku a byl z milosti utracen.";
 				}
 				else if (num == 25)
 				{
-					text = " had their head removed";
+					text = " byl uslapan k smrti.";
 				}
 				if (plr >= 0 && plr < 255)
 				{
@@ -27778,34 +27778,38 @@ namespace Terraria
 					{
 						result = string.Concat(new string[]
 						{
-							text,
-							" by ",
-							Main.player[plr].name,
-							"'s ",
-							Main.projectile[proj].name,
-							"."
+                            //text,
+                            //" by ",
+                            //Main.player[plr].name,
+                            //"'s ",
+                            //Main.projectile[proj].name,
+                            //"."
+                            text,"."
 						});
 					}
 					else
 					{
 						result = string.Concat(new string[]
 						{
-							text,
-							" by ",
-							Main.player[plr].name,
-							"'s ",
-							Main.player[plr].inventory[Main.player[plr].selectedItem].name,
-							"."
+                            //text,
+                            //" by ",
+                            //Main.player[plr].name,
+                            //"'s ",
+                            //Main.player[plr].inventory[Main.player[plr].selectedItem].name,
+                            //"."
+                            text,"."
 						});
 					}
 				}
 				else if (npc >= 0 && Main.npc[npc].displayName != "")
 				{
-					result = text + " by " + Main.npc[npc].displayName + ".";
+                    //result = text + " by " + Main.npc[npc].displayName + ".";
+                    result = text + ".";
 				}
 				else if (proj >= 0 && Main.projectile[proj].name != "")
 				{
-					result = text + " by " + Main.projectile[proj].name + ".";
+                    //result = text + " by " + Main.projectile[proj].name + ".";
+                    result = text + ".";
 				}
 				else if (other >= 0)
 				{
